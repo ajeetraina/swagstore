@@ -1,7 +1,7 @@
 ![](atsea_store.png)
-#  AtSea Shop Demonstration Application
+#  Swag Store Demonstration Application
 
-The AtSea Shop is a demonstration application comprised of: 
+The Swag Store is a demonstration application comprised of: 
 
 * Java REST application written using Spring-Boot, 
 * a database for product inventory, customer data, and orders,
@@ -11,7 +11,7 @@ The AtSea Shop is a demonstration application comprised of:
 
 # Requirements
 
-This example uses features in Docker 17.05 CE Edge. Install this version to run the example.
+This example uses features in Docker 20.10.14 release. Install this version to run the example.
 
 # Building and Running the AtSea Shop
 
@@ -39,7 +39,7 @@ echo staging | docker secret create staging_token -
 
 ## Run as an application
 
-To run the AtSea shop as an application:
+To run the Swag Store shop as an application:
 ```
 docker-compose up --build
 ```
@@ -60,7 +60,7 @@ docker-compose --file docker-compose-dev.yml up --build
 
 
 
-## The AtSea Shop 
+## The Swag Store Shop 
 
 The URL for the content is `http://localhost:8080/`
 
