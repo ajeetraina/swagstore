@@ -1,4 +1,4 @@
-![](atsea_store.png)
+
 #  Swag Store Demonstration Application
 
 The Swag Store is a demonstration application comprised of: 
