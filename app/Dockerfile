@@ -1,4 +1,4 @@
-FROM node:latest AS storefront
+FROM node:16 AS storefront
 WORKDIR /usr/src/atsea/app/react-app
 COPY react-app .
 RUN npm install
@@ -11,8 +11,8 @@ RUN mvn -B -f pom.xml -s /usr/share/maven/ref/settings-docker.xml dependency:res
 COPY . .
 RUN mvn -B -s /usr/share/maven/ref/settings-docker.xml package -DskipTests
 
-FROM java:8-jdk-alpine
-RUN adduser -Dh /home/gordon gordon
+FROM openjdk:11-jre-slim-stretch
+RUN adduser -b /home/gordon gordon
 WORKDIR /static
 COPY --from=storefront /usr/src/atsea/app/react-app/build/ .
 WORKDIR /app
